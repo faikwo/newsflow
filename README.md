@@ -64,29 +64,6 @@ To restore, just copy the `data/` folder back and restart the containers.
 
 ---
 
-## Recommended Ollama Models (Dual RTX 3060 12GB)
-
-Enable both GPUs on your Ollama server first:
-```bash
-# Linux / Windows WSL
-OLLAMA_NUM_GPU=2 ollama serve
-
-# Or set it permanently in systemd:
-# Environment="OLLAMA_NUM_GPU=2"
-```
-
-| Model | VRAM | Quality | Speed | Best for |
-|-------|------|---------|-------|----------|
-| `llama3.1:8b` | ~5GB | ⭐⭐⭐⭐ | Fast | Light, quick summaries |
-| `mistral-nemo` | ~8GB | ⭐⭐⭐⭐⭐ | Good | **Recommended — best balance** |
-| `mixtral:8x7b` | ~26GB | ⭐⭐⭐⭐⭐ | Slower | Highest quality, uses both GPUs |
-
-```bash
-ollama pull mistral-nemo
-```
-
----
-
 ## Useful Commands
 
 ```bash
