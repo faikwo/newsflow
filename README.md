@@ -40,7 +40,7 @@ That's it. The installer will:
 
 ## First-Time Setup (after install)
 
-1. Open `http://YOUR_PI_IP:3000`
+1. Open `http://localhost:3000` (or your server's IP)
 2. Register an account — **first user becomes admin**
 3. Go to **Settings** → set your Ollama server URL (e.g. `http://192.168.1.100:11434`) → click **Test** → pick your model
 4. Go to **Topics** → subscribe to what interests you
